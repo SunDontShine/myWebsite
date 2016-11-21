@@ -10,13 +10,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       
+    <script src='home.js'></script>    
     </head>
             
     <body>
-        
-        <div class='jumbotron'>
-            <h1>Carlos Davila</h1>
-        </div>
+
     
     <nav class='navbar navbar-inverse' navbar-fixed-top >
         
@@ -24,43 +22,53 @@
             
             <div class='dropdown'>
            <ul class='nav navbar-nav '>
-    
-              <!---WORKS  
-                <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Links<span class="caret"></span>  
-        </a>
---->
                <li>
                     <a href='#'class='dropdown-toggle' data-toggle='dropdown'>
                         <span class="glyphicon glyphicon-link"></span>
                     </a>
                    <ul class='dropdown-menu'>
-                    <li><a href='https://github.com/SunDontShine'>Github</a></li>
+                    <li><a href='https://github.com/SunDontShine'>GitHub</a></li>
+                       <li class='divider'></li>
                     <li><a href='https://www.linkedin.com/in/carlos-davila-12330353'>LinkedIN</a></li>
                     </ul>
                 </li>
-
-               
-            </ul>
-               
-            </div>
-            
+            </ul> 
+            </div> 
             <div class='navbar-header'>
                 <a class='navbar-brand' href='#'>Carlos     Davila</a>            
             </div>
             <ul class='nav navbar-nav'>
                 <li class='active'><a href='#'>Home</a></li>
-                <li> <a href='#'>Projects</a></li>
-                
             </ul>
-            
+            <div class='dropdown'>
+                <ul class='nav navbar-nav'>
+                <li> 
+                    
+                    
+                    <a href='#'class='dropdown-toggle' data-toggle='dropdown'>Projects</a>
+                
+                <ul class='dropdown-menu'>
+                    <li><a href='#'>Rocket Project</a></li>
+                       <li class='divider'></li>
+                    <li><a href='#'>Childrens Web Application</a></li>
+                    </ul>
+                
+                </li>
+                
+                </ul>
+            </div>
             <ul class='nav navbar-nav navbar-right'>
                 <li> <a href='#'>About Me</a></li>
-            </ul>
+            </ul>     
+        </div>
+    </nav>
+            <div type='button' class='btn btn-primary' onclick='getSent()'>Primary </div>
+        
+        <div class='jumbotron' id='quoteBlock'>
+            
+            <h1>Carlos Davila</h1>
             
         </div>
     
-    </nav>
-    
-    <blockquote> Yolo <footer>Carlos</footer></blockquote>
     </body>
 </html>
