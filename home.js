@@ -20,14 +20,22 @@ function displayQuoteInfo(response){
     var background =jsonObj.background;
     
     //date needed
-    document.getElementById('quoteBlock').backgroundImage = background;
+    document.body.style.backgroundImage = "url("+background+")";
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundPosition = 'center center';
+    
+    
     var qotd = document.getElementById('qotd');
+  //  qotd.style.textAlign ='center';
+    qotd.style.fontSize = 'x-large';
+    qotd.style.color = 'black';
     qotd.innerHTML = quote;
     
-    var footer = document.createElement('FOOTER');
-    footer.innerHTML = author;
-    qotd.appendChild(footer)
-    
+    var aut = document.getElementById('author');
+    //aut.style.textAlign ='center';
+    aut.style.fontSize = 'large';
+    aut.style.color = 'black';
+    aut.innerHTML = "-" + author;
     
     console.log(jsonObj);
 

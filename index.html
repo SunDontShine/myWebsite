@@ -11,7 +11,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       
     <script src='home.js'></script> 
-        <script>getSent();</script>
+     
+       <script>getSent();</script>
+    
+        <link href='home.css' rel ='stylesheet'/>    
     </head>
             
     <body>
@@ -21,11 +24,31 @@
         
         <div class='container-fluid'>
             
+            
+            <div class='navbar-header'>
+                <a class='navbar-brand' href='#'>Carlos Davila</a>            
+            </div>
+            <ul class='nav navbar-nav'>
+                <li class='active'><a href='#'><span class='glyphicon glyphicon-home'>&nbsp;Home</span></a></li>
+            </ul>
+            <div class='dropdown'>
+                <ul class='nav navbar-nav'>
+                <li> 
+                    <a href='#'class='dropdown-toggle' data-toggle='dropdown'><span class='glyphicon glyphicon-fire'>&nbsp;Projects</span></a>
+                
+                <ul class='dropdown-menu'>
+                    <li><a href='#'>&nbsp;Rocket Project</a></li>
+                       <li class='divider'></li>
+                    <li><a href='#'>Childrens Web Application</a></li>
+                    </ul>
+                </li> 
+                </ul>
+            </div>
             <div class='dropdown'>
            <ul class='nav navbar-nav '>
                <li>
                     <a href='#'class='dropdown-toggle' data-toggle='dropdown'>
-                        <span class="glyphicon glyphicon-link"></span>
+                        <span class="glyphicon glyphicon-link">Links</span>
                     </a>
                    <ul class='dropdown-menu'>
                     <li><a href='https://github.com/SunDontShine'>GitHub</a></li>
@@ -35,44 +58,19 @@
                 </li>
             </ul> 
             </div> 
-            <div class='navbar-header'>
-                <a class='navbar-brand' href='#'>Carlos     Davila</a>            
-            </div>
-            <ul class='nav navbar-nav'>
-                <li class='active'><a href='#'>Home</a></li>
-            </ul>
-            <div class='dropdown'>
-                <ul class='nav navbar-nav'>
-                <li> 
-                    
-                    
-                    <a href='#'class='dropdown-toggle' data-toggle='dropdown'>Projects</a>
-                
-                <ul class='dropdown-menu'>
-                    <li><a href='#'>Rocket Project</a></li>
-                       <li class='divider'></li>
-                    <li><a href='#'>Childrens Web Application</a></li>
-                    </ul>
-                
-                </li>
-                
-                </ul>
-            </div>
             <ul class='nav navbar-nav navbar-right'>
-                <li> <a href='#'>About Me</a></li>
+                <li> <a href='#'><span class='glyphicon glyphicon-user'>&nbsp;About</span></a></li>
             </ul>     
         </div>
     </nav>
-            <!--<div type='button' class='btn btn-primary' onclick='getSent()'>Primary </div>-->
         
-        <div class='jumbotron' id='quoteBlock'>
-            
-            <blockquote id='qotd'>
-            
-                
-            </blockquote>
-            
+        <div class='container' >
+            <div class='row row-centered'>
+                <div class='col-md-12 col-centered' id='qotd'></div>
+            </div>
+            <div class='row row-centered'>
+                <div class='col-md-12 col-centered' id='author'></div>
+            </div>
         </div>
-    
     </body>
 </html>
