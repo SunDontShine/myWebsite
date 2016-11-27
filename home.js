@@ -41,14 +41,18 @@ function displayQuoteInfo(response){
     
     var qotd = document.getElementById('qotd');
     qotd.style.fontSize = 'x-large';
-    qotd.style.color = 'blue';
-    qotd.style.fontFamily ='homemade apple, cursive'
+    qotd.style.color = 'darkkhaki';
+    qotd.style.fontFamily ='Impact, Charcoal, sans-serif'
+        qotd.style.fontStyle = 'bold';
+
     qotd.innerHTML = quote;
     
     var aut = document.getElementById('author');
-    aut.style.fontSize = 'large';
-    aut.style.fontFamily='homemade apple, cursive'
-    aut.style.color = 'blue';
+    aut.style.fontSize = 'medium';
+    aut.style.fontFamily='Impact, Charcoal, sans-serif'
+        aut.style.fontStyle = 'bold';
+
+    aut.style.color = 'darkkhaki';
     aut.innerHTML = "-" + author;
     
 
