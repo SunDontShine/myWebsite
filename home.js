@@ -21,6 +21,18 @@ function getSent(){
     request.send(null);
 }
 
+//type is GET or POST, url and async are self explanatory
+function loadPage(url){
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function(){
+        if((request.readyState == 4) && (request.status ==200)){
+            document.getElementById('main').innerHTML= request.responseText;
+        }
+    }
+    request.open('GET',url+'.html',true);
+    request.send(null);
+}
+
 
 function displayQuoteInfo(response){
     var res = response;
@@ -32,7 +44,7 @@ function displayQuoteInfo(response){
     var background =jsonObj.background;
     
     //date needed
-    document.body.style.backgroundImage = "url("+background+")";
+    document.body.style.backgroundImage = "url(images/IMG_2432.JPG)";
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundPosition = 'center center';
     document.body.style.backgroundSize ='cover';
