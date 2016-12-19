@@ -1,0 +1,23 @@
+
+body {
+   /* background-image: url("./images/IMG_1764.JPG");*/
+    	background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: gainsboro;
+}
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    width: 260px;
+     align-items: center
+} 
