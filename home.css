@@ -1,22 +1,19 @@
-body {
-    //background-image: url("./images/IMG_1764.JPG");
-    	background-position: center center;
-			background-repeat:  no-repeat;
-			background-attachment: fixed;
-			background-size:  cover;
-			background-color: gainsboro;
+html { 
+  background: url(images/faded_santan.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
- .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    width: 260px;
-     align-items: center
-} 
+body{
+    background: transparent;
+}
+
+.transparent{
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+
+h3{
+    color:white;
+}
